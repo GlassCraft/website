@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jogo de Vidraçaria - Lançamento em 1 de Março</title>
+    <style>
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #0077cc;
+}
+
+p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.concept-section,
+.objectives-section {
+    margin-bottom: 30px;
+}
+
+.concept-section h2::after,
+.objectives-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #0077cc;
+    margin-top: 8px;
+}
+
+.concept-section strong,
+.objectives-section strong {
+    color: #333;
+}
+    </style>
+</head>
+
+<body>
+
+        
+    <nav>
+        <div class="nav_Logo">
+            <a href="index.html"><img src="../arquivos/Glass__1_-removebg-preview (1).png" alt="GlassCraft"></a>
+        </div>
+
+        <div class="nav_Items">
+            <ul>
+                <li><a href="creditos.html">Créditos</a></li>
+                <li><a href="sobre.html">Sobre o jogo</a></li>
+                <li><a href="sobre.html">Desenvolvimento</a></li>
+                <li><a href="lancamento.html">Download</a></li>
+            </ul>
+        </div>
+
+        <button class="menu-button" onclick="navResponsive()">=</button>
+    </nav>
+    <h1>Jogo de Simulação de Vidraçaria</h1>
+
+    <main>
+
+    <div class="concept-section">
+        <h2>1. Conceito</h2>
+        <p><strong>Introdução:</strong> Este documento propõe a concepção e desenvolvimento de um jogo de simulação de gerenciamento de uma vidraçaria, utilizando a plataforma Unity...</p>
+
+        <h2>2. Tema do Jogo</h2>
+        <p>O tema central do jogo gira em torno da administração de uma vidraçaria, oferecendo aos jogadores a oportunidade de assumir o papel de um empreendedor na indústria de vidros...</p>
+    </div>
+
+    <div class="objectives-section">
+        <h2>3. Objetivo do Jogador</h2>
+        <p><strong>Receber Pedidos:</strong> Os jogadores serão desafiados a gerenciar e atender pedidos de clientes, que variam em complexidade e demandas específicas...</p>
+        <p><strong>Produção Eficiente:</strong> Implementar práticas eficientes de produção, desde o corte e modelagem até o acabamento dos produtos de vidro, garantindo a satisfação do cliente...</p>
+        <p><strong>Gerenciamento de Recursos:</strong> Gerenciar recursos essenciais, como estoque de vidro, ferramentas e a contratação estratégica de funcionários, equilibrando a eficiência com os custos operacionais...</p>
+        <p><strong>Lucro Sustentável:</strong> Alcançar lucro sustentável, considerando fatores como precificação adequada, controle de qualidade e satisfação do cliente para garantir a fidelidade e retorno de negócios...</p>
+    </div>
+
+    <div>
+        <p>Lançamento em 1 de Março - Fique ligado para uma experiência única de gestão de vidraçaria!</p>
+    </div>
+</main>
+
+
+    <footer>
+
+        <div class="footerTop">
+        <div class="footerLeft">
+            <h4>GlassCraft</h4>
+            <p>Prepare-se para jogar, dia 29 de fevereiro.</p>
+        </div>
+
+        <div class="footerRight">
+            <a href="creditos.html">Créditos</a>
+            <a href="lancamento.html">Lançamento</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="#">Download</a>
+            <a href="#">Política de privacidade</a>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="footerBottom">
+        GlassCraft Todos os Direitos Reservados 2023
+    </div>
+    </footer>
+
+    <div id="cookie-consent" class="cookie-consent">
+        <p>Este site pode utilizar cookies para melhorar a sua experiência. Ao continuar, você concorda com o uso de cookies.</p>
+        <button onclick="acceptCookies()">Aceitar Cookies</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("cookieConsentWebsiteGlasscraft")) {
+                // Se o consentimento do cookie ainda não foi dado, exibe o aviso de cookies
+                document.getElementById("cookie-consent").style.display = "block";
+            }
+        });
+        
+        function acceptCookies() {
+            // Armazena o consentimento do cookie na localStorage
+            localStorage.setItem("cookieConsentWebsiteGlasscraft", "accepted");
+        
+            // Esconde o aviso de cookies
+            document.getElementById("cookie-consent").style.display = "none";
+        }
+            </script>
+<script>
+    let nav = document.querySelector(".nav_Items");
+ 
+    function navResponsive(){
+     nav.classList.toggle("show");
+    }
+ </script>
+
+
+
+</body>
+
+</html>
