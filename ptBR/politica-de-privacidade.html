@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.container_politica {
+  width: 70%;
+  margin: 0 auto;
+  height: 90vh;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.h2_politica {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.container_politica p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.a_contato {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+    </style>
+    <title>GlassCraft - Privacidade</title>
+</head>
+<body>
+
+    
+    <nav>
+        <div class="nav_Logo">
+            <a href="index.html"><img src="../arquivos/Glass__1_-removebg-preview (1).png" alt="GlassCraft"></a>
+        </div>
+
+        <div class="nav_Items">
+            <ul>
+                <li><a href="creditos.html">Créditos</a></li>
+                <li><a href="sobre.html">Sobre o jogo</a></li>
+                <li><a href="sobre.html">Desenvolvimento</a></li>
+                <li><a href="lancamento.html">Download</a></li>
+            </ul>
+        </div>
+
+        <button class="menu-button" onclick="navResponsive()">=</button>
+    </nav>
+
+
+    <div class="container_politica">
+        <h1>Política de Privacidade - GlassCraft</h1>
+      
+        <p>Última atualização: 5 de janeiro de 2024</p>
+      
+        <h2 class="h2_politica">Cookies</h2>
+        <p>O GlassCraft pode usar cookies para melhorar a experiência do usuário. Esses cookies não contêm informações pessoais e podem ser gerenciados nas configurações do navegador.</p>
+      
+        <h2 class="h2_politica">Contato</h2>
+        <p>Para mais informações, entre em contato conosco em glasscraftgame@gmail.com.</p>
+      </div>
+
+
+    
+    <footer>
+
+        <div class="footerTop">
+        <div class="footerLeft">
+            <h4>GlassCraft</h4>
+            <p>Prepare-se para jogar, dia 29 de fevereiro.</p>
+        </div>
+
+        <div class="footerRight">
+            <a href="#">Créditos</a>
+            <a href="lancamento.html">Lançamento</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="#">Download</a>
+            <a href="#">Política de privacidade</a>
+        </div>
+
+
+
+    </div>
+
+    <div class="footerBottom">
+        GlassCraft Todos os Direitos Reservados 2023
+    </div>
+    </footer>
+
+    <div id="cookie-consent" class="cookie-consent">
+        <p>Este site pode utilizar cookies para melhorar a sua experiência. Ao continuar, você concorda com o uso de cookies.</p>
+        <button onclick="acceptCookies()">Aceitar Cookies</button>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("cookieConsentWebsiteGlasscraft")) {
+        // Se o consentimento do cookie ainda não foi dado, exibe o aviso de cookies
+        document.getElementById("cookie-consent").style.display = "block";
+    }
+});
+
+function acceptCookies() {
+    // Armazena o consentimento do cookie na localStorage
+    localStorage.setItem("cookieConsentWebsiteGlasscraft", "accepted");
+
+    // Esconde o aviso de cookies
+    document.getElementById("cookie-consent").style.display = "none";
+}
+    </script>
+
+<script>
+   let nav = document.querySelector(".nav_Items");
+
+   function navResponsive(){
+    nav.classList.toggle("show");
+   }
+</script>
+    
+</body>
+</html>
