@@ -15,6 +15,11 @@ nav {
     background-color: #ffffff;
     padding-left: 10px;
     padding-right: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
 }
 
 .nav_Logo{
@@ -38,6 +43,33 @@ nav {
     margin-right: 20px;
 }
 
+.displayEvolua{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.seta{
+    font-size: 100px;
+}
+
+.setaBaixo{
+    font-size: 100px;
+    display: none;
+}
+.evoluaAFabrica{
+    height: 300px;
+    background-color: rgba(128, 128, 128, 0.479);
+
+}
+
+.evoluaAFabrica h2{
+    font-size: 30px;
+}
+
 .nav_Items a {
     text-decoration: none;
     color: #333;
@@ -51,6 +83,7 @@ nav {
 
 main{
     display: flex;
+    margin-top: 10vh;
 }
 
 .main_left{
@@ -111,7 +144,7 @@ border-radius: 10px;
 .funcionarios_right{
     width: 50%;
     height: 400px;
-    background-image: url("../arquivos/Captura de tela 2024-01-05 221041.png");
+    background-image: url("../arquivos/Captura\ de\ tela\ 2024-01-05\ 205948.png");
     background-size: cover;
     background-position: center;
 }
@@ -204,6 +237,26 @@ box-sizing: border-box;
   }
   
 
+  @media (max-width: 1000px){
+
+    .displayEvolua{
+        flex-direction: column;
+    }
+
+    .evoluaAFabrica{
+        height: auto;
+    }
+
+    .seta{
+        display: none;
+    }
+
+    .setaBaixo{
+        display: block;
+    }
+
+  }
+
 
 @media (max-width: 800px) {
     main {
@@ -221,14 +274,14 @@ box-sizing: border-box;
       }
 
       .nav_Items{
-        top: 50px;
+        top: 10vh;
         right: -120%;
         background-color: white;
         display: flex;
         transition: 0.1s;
         justify-content: center;
         position: fixed;
-        width: 80vw;
+        width: 90vw;
         height: 100vh;
     }
 
