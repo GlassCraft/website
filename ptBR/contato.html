@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GlassCraft é um jogo que será disponibilizado na Play Store em 2024. Controle sua vidraçaria!">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  margin-top: 12vh;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+}
+    </style>
+
+    <title>Contato - GlassCraft</title>
+</head>
+<body>
+
+    <nav>
+    
+    </nav>
+
+    <div class="form-container">
+        <h2>Formulário de Contato</h2>
+        <form action="mailto:glasscraftgame@gmail.com" method="post" enctype="text/plain">
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" required><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="mensagem">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </form>
+        <p class="note">Ao clicar em "Enviar", você concorda em enviar um e-mail para glasscraftgame@gmail.com</p>
+        <p class="note">Se preferir, você pode entrar em contato diretamente através do e-mail <a href="mailto:glasscraftgame@gmail.com">glasscraftgame@gmail.com</a>.</p>
+
+      </div>
+
+
+
+
+    <footer>
+
+    </footer>
+
+    <script src="header&footerJS.js"></script>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (!localStorage.getItem("cookieConsentWebsiteGlasscraft")) {
+            // Se o consentimento do cookie ainda não foi dado, exibe o aviso de cookies
+            document.getElementById("cookie-consent").style.display = "block";
+        }
+    });
+    
+    function acceptCookies() {
+        // Armazena o consentimento do cookie na localStorage
+        localStorage.setItem("cookieConsentWebsiteGlasscraft", "accepted");
+    
+        // Esconde o aviso de cookies
+        document.getElementById("cookie-consent").style.display = "none";
+    }
+    
+            const dataLancamento = new Date('2024-03-01T00:00:00Z').getTime();
+    
+            // Atualiza o contador a cada segundo
+            const interval = setInterval(() => {
+                const agora = new Date().getTime();
+                const diferenca = dataLancamento - agora;
+    
+                const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+    
+                document.getElementById('countdown').innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+    
+                // Verifica se o tempo acabou
+                if (diferenca < 0) {
+                    clearInterval(interval);
+                    document.getElementById('countdown').innerHTML = 'O jogo foi lançado!';
+                }
+            }, 1000);
+        </script>
+    
+    <script>
+        let nav = document.querySelector(".nav_Items");
+     
+        function navResponsive(){
+         nav.classList.toggle("show");
+        }
+     </script>
+    
+</body>
+</html>
