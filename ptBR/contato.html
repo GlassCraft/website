@@ -107,53 +107,10 @@ input[type="reset"]:focus {
     </footer>
 
     <script src="header&footerJS.js"></script>
+    <script src="cookiesJavascript.js"></script>
 
-<script>
 
-    document.addEventListener("DOMContentLoaded", function () {
-        if (!localStorage.getItem("cookieConsentWebsiteGlasscraft")) {
-            // Se o consentimento do cookie ainda não foi dado, exibe o aviso de cookies
-            document.getElementById("cookie-consent").style.display = "block";
-        }
-    });
-    
-    function acceptCookies() {
-        // Armazena o consentimento do cookie na localStorage
-        localStorage.setItem("cookieConsentWebsiteGlasscraft", "accepted");
-    
-        // Esconde o aviso de cookies
-        document.getElementById("cookie-consent").style.display = "none";
-    }
-    
-            const dataLancamento = new Date('2024-03-01T00:00:00Z').getTime();
-    
-            // Atualiza o contador a cada segundo
-            const interval = setInterval(() => {
-                const agora = new Date().getTime();
-                const diferenca = dataLancamento - agora;
-    
-                const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-                const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-                const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
-    
-                document.getElementById('countdown').innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
-    
-                // Verifica se o tempo acabou
-                if (diferenca < 0) {
-                    clearInterval(interval);
-                    document.getElementById('countdown').innerHTML = 'O jogo foi lançado!';
-                }
-            }, 1000);
-        </script>
-    
-    <script>
-        let nav = document.querySelector(".nav_Items");
-     
-        function navResponsive(){
-         nav.classList.toggle("show");
-        }
-     </script>
+
     
 </body>
 </html>
