@@ -42,6 +42,7 @@
 
 .creditoContainer{
     padding: 20px;
+    margin-top: 13vh;
 }
 
 #agradecimento {
@@ -72,7 +73,7 @@ h2{
 
 
 
-    <div class="creditoContainer">
+    <div class="creditoContainer" style="margin-top: 12vh;">
 
         <h2>Créditos: </h2>
     
@@ -202,6 +203,15 @@ h2{
         <div class="credito">
             Músicas: Music by <a href="https://pixabay.com/pt/users/fassounds-3433550/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=112191">FASSounds</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=112191">Pixabay</a>, Music by <a href="https://pixabay.com/pt/users/pumpupthemind-19969411/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=168895">Pumpupthemind</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=168895">Pixabay</a>, Music by <a href="https://pixabay.com/pt/users/chillmore-25283030/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=117427">Chillmore</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=117427">Pixabay</a>, Music by <a href="https://pixabay.com/pt/users/itswatr-12344345/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=12278">Jonas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=12278">Pixabay</a>
         </div>
+        <div class="credito">
+            Balões: Imagem de <a href="https://pixabay.com/pt/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=150128">OpenClipart-Vectors</a>  por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=150128">Pixabay</a>;
+        </div>
+
+       <div class="credito"> Surpresa Caixa Icon:  Ícones feitos por <a href="https://www.flaticon.com/br/autores/noomtah" title="noomtah"> noomtah </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
+
+    <div class="credito">
+        Anuncio: <a href="https://www.flaticon.com/br/icones-gratis/publicidade">Publicidade ícones criados por Freepik - Flaticon</a>
+    </div>
         <br><br>
       <h2> Referente ao 2d:</h2> 
         <br>
@@ -236,37 +246,13 @@ h2{
 
     </footer>
 
-    <div id="cookie-consent" class="cookie-consent">
-        <p>Este site pode utilizar cookies para melhorar a sua experiência. Ao continuar, você concorda com o uso de cookies.</p>
-        <button onclick="acceptCookies()">Aceitar Cookies</button>
-    </div>
+
 
     <script src="header&footerJS.js"></script>
+    <script src="cookiesJavascript.js"></script>
 
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    if (!localStorage.getItem("cookieConsentWebsiteGlasscraft")) {
-        // Se o consentimento do cookie ainda não foi dado, exibe o aviso de cookies
-        document.getElementById("cookie-consent").style.display = "block";
-    }
-});
 
-function acceptCookies() {
-    // Armazena o consentimento do cookie na localStorage
-    localStorage.setItem("cookieConsentWebsiteGlasscraft", "accepted");
 
-    // Esconde o aviso de cookies
-    document.getElementById("cookie-consent").style.display = "none";
-}
-    </script>
-
-<script>
-   let nav = document.querySelector(".nav_Items");
-
-   function navResponsive(){
-    nav.classList.toggle("show");
-   }
-</script>
     
 </body>
 </html>
