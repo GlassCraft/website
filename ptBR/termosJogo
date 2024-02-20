@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 12vh;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.term-section {
+    margin-top: 30px;
+}
+
+.term-heading {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.term-text, .additional-text {
+    line-height: 1.6;
+    color: black;
+}
+
+    </style>
+    <title>GlassCraft</title>
+</head>
+<body>
+
+    
+    <nav>
+
+    </nav>
+
+
+    <div class="container">
+        <h1 class="title">Termos de Uso - GlassCraft</h1>
+        
+        <div class="term-section">
+            <h2 class="term-heading">Aceitação dos Termos</h2>
+            <p class="term-text">Ao acessar ou jogar GlassCraft, você concorda em cumprir estes Termos de Uso e todas as leis e regulamentos aplicáveis.</p>
+        </div>
+
+        <div class="term-section">
+            <h2 class="term-heading">Anúncios e Avaliações</h2>
+            <p class="term-text">O GlassCraft pode exibir anúncios durante o jogo. Estes anúncios podem ser personalizados com base em suas preferências e comportamentos de uso. Ao jogar GlassCraft, você concorda em receber esses anúncios e reconhece que as avaliações dos anúncios podem ser baseadas em suas interações com eles.</p>
+        </div>
+
+        <div class="term-section">
+            <h2 class="term-heading">Privacidade</h2>
+            <p class="term-text">Respeitamos sua privacidade. Todas as informações pessoais coletadas durante o uso do GlassCraft serão tratadas de acordo com nossa Política de Privacidade.</p>
+        </div>
+
+        <div class="term-section">
+            <h2 class="term-heading">Conteúdo do Usuário</h2>
+            <p class="term-text">Ao enviar qualquer tipo de conteúdo para o GlassCraft, você concede a nós uma licença mundial, irrevogável, não exclusiva e livre de royalties para usar, reproduzir, modificar, adaptar, publicar, traduzir e distribuir esse conteúdo em qualquer meio.</p>
+        </div>
+
+        <div class="term-section">
+            <h2 class="term-heading">Modificações nos Termos</h2>
+            <p class="term-text">Reservamo-nos o direito de modificar ou atualizar estes Termos de Uso a qualquer momento, a nosso critério. Recomendamos que você revise periodicamente estes termos para estar ciente de quaisquer alterações.</p>
+        </div>
+
+        <div class="term-section">
+            <h2 class="term-heading">Itens de UI e 2D</h2>
+            <p class="term-text">Muitos elementos visuais, como ícones, imagens e gráficos utilizados na interface do usuário (UI) e em elementos 2D do jogo, podem ser obtidos de outros sites. As atribuições para esses itens estão disponíveis no site do GlassCraft, e o link para o site pode ser acessado por <a href="creditos.html">aqui</a>.</p>
+        </div>
+<div class="term-section">
+    <p class="additional-text">Esses termos, descritos aqui, valem para o jogo também, além dos próprios que são mostrados no início do jogo, que são os mesmos.</p>
+</div>
+    </div>
+    
+
+ 
+
+
+    
+    <footer>
+
+    </footer>
+
+    <div id="cookie-consent" class="cookie-consent">
+        <p>Este site pode utilizar cookies para melhorar a sua experiência. Ao continuar, você concorda com o uso de cookies.</p>
+        <button onclick="acceptCookies()">Aceitar Cookies</button>
+    </div>
+
+    <script src="header&footerJS.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("cookieConsentWebsiteGlasscraft")) {
+        // Se o consentimento do cookie ainda não foi dado, exibe o aviso de cookies
+        document.getElementById("cookie-consent").style.display = "block";
+    }
+});
+
+function acceptCookies() {
+    // Armazena o consentimento do cookie na localStorage
+    localStorage.setItem("cookieConsentWebsiteGlasscraft", "accepted");
+
+    // Esconde o aviso de cookies
+    document.getElementById("cookie-consent").style.display = "none";
+}
+    </script>
+
+<script>
+   let nav = document.querySelector(".nav_Items");
+
+   function navResponsive(){
+    nav.classList.toggle("show");
+   }
+</script>
+    
+</body>
+</html>
