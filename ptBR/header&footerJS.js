@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="footerBottom">
-    GlassCraft Todos os Direitos Reservados 2024
+GlassCraft Todos os Direitos Reservados 2024. Desenvolvido por Maracujá Gamess.
 </div>
     `;
 
@@ -59,4 +59,3 @@ document.addEventListener('DOMContentLoaded', function() {
         footerElement.innerHTML = footerContent;
     }
 });
-
