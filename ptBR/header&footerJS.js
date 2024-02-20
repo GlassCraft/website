@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Conteúdo do cabeçalho
     var navContent = `
@@ -27,14 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <div class="footerRight">
-        <a href="creditos.html">Créditos</a>
-        <a href="lancamento.html">Lançamento</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="lancamento.html">Download</a>
-        <a href="politica-de-privacidade.html">Política de privacidade</a>
-        <a href="contato.html">Contato</a>
+    <a href="creditos.html">Créditos</a>
+    <a href="lancamento.html">Lançamento</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="lancamento.html">Download</a>
+    <a href="politica-de-privacidade.html">Política de privacidade</a>
+    <a href="contato.html">Contato</a>
+    <a href="termosJogo.html">Termos do jogo</a>
 
-    </div>
+</div>
+
 
 
 
@@ -58,3 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
         footerElement.innerHTML = footerContent;
     }
 });
+
