@@ -8,20 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
         // Cria a navegação
         var navContent = document.createElement('div');
         navContent.innerHTML = `
-            <div class="nav_Logo">
-                <a href="index.html"><img src="../arquivos/Glass__1_-removebg-preview (1).png" alt="GlassCraft"></a>
-            </div>
+        <div class="nav_Logo">
+        <a href="index.html"><img src="../arquivos/Glass__1_-removebg-preview (1).png" alt="GlassCraft"></a>
+    </div>
 
-            <div class="nav_Items">
-                <ul>
-                    <li><a href="creditos.html">Créditos</a></li>
-                    <li><a href="sobre.html">Sobre o jogo</a></li>
-                    <li><a href="sobre.html">Desenvolvimento</a></li>
-                    <li><a href="lancamento.html">Download</a></li>
-                </ul>
-            </div>
+    <div class="nav_Items">
+        <ul>
+            <li><a href="creditos.html">Créditos</a></li>
+            <li><a href="sobre.html">Sobre o jogo</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.MaracujaGamessStudio.GlassCraft">Jogar</a></li>
+            <li><a href="lancamento.html">Download</a></li>
+        </ul>
+    </div>
 
-            <button class="menu-button">=</button>
+    <button class="menu-button" onclick="navResponsive()">=</button>
         `;
         // Adiciona a navegação ao cabeçalho
         navElement.innerHTML = navContent.innerHTML;
